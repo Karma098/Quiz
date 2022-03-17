@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.quiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/animeq1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/animeq1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quiz">
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/NoActionBarTheme"
+            android:exported="false" />
+        <activity
+            android:name=".QuizQuestionsActivity"
+            android:exported="false"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="unspecified"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
